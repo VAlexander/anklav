@@ -13,3 +13,7 @@ class ItemData(Item):
     ItemName = Field()
     ImageURL = Field()
     ItemPrice = Field()
+
+
+class LinkData(Item):
+    LinkURL = Field()

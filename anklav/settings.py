@@ -11,14 +11,14 @@
 
 import os.path
 
-BOT_NAME = 'anklav'
+BOT_NAME = 'anklav.pricing.bot'
 
 SPIDER_MODULES = ['anklav.spiders']
 NEWSPIDER_MODULE = 'anklav.spiders'
 
-# LOG_FILE = os.path.dirname(__file__) + '/log/anklav.log'
-# LOG_ENABLED = True
-# LOG_LEVEL = 'INFO'
+LOG_FILE = os.path.dirname(__file__) + '/log/anklav.log'
+LOG_ENABLED = True
+LOG_LEVEL = 'ERROR'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -77,9 +77,9 @@ ITEM_PIPELINES = {
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-#AUTOTHROTTLE_START_DELAY = 5
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
 #AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
